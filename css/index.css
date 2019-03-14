@@ -64,11 +64,15 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
 }
 
+
+
+
+
 /* Your code starts here! */
 
-/* ********************************************************
-*                        CONTAINER                        *
-***********************************************************/ 
+/* ****************************************************************
+*                        CONTAINER                                *
+*******************************************************************/ 
 .container {
 	max-width: 880px;
 	margin: 0 auto;
@@ -86,9 +90,9 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
-/* ********************************************************
-*                          HEADER                         *
-***********************************************************/
+/* ***************************************************************
+*                          HEADER                                *
+*****************************************************************/
 header {
 	display: flex;
 }
@@ -97,7 +101,7 @@ header {
 	margin-top: 22px;
 }
 
-/***************  MEDIA QUERY 800PX  ***************/
+	/***************  MEDIA QUERY 800PX  ***************/
 	@media (max-width: 800px) {
 		header {
 			flex-direction: column-reverse;
@@ -110,16 +114,16 @@ header {
 		}
 	}
 
-/***************  MEDIA QUERY 800PX  ***************/
+	/***************  MEDIA QUERY 800PX  ***************/
 	@media (max-width: 500px) {
 		.logo-link {
 			margin-top: 19px;
 		}
 	}
 
-/* ********************************************************
-*                            NAV                          *
-***********************************************************/
+/* ***************************************************************
+*                            NAV                                 *
+*****************************************************************/
 nav {
 	width: 100%;
 	display: flex;
@@ -137,7 +141,7 @@ nav > a:last-of-type {
 	margin-right: 90px;
 }
 
-/***************  MEDIA QUERY 800PX  ***************/
+	/***************  MEDIA QUERY 800PX  ***************/
 	@media (max-width: 800px) {
 		nav {
 			justify-content: space-between;
@@ -150,7 +154,7 @@ nav > a:last-of-type {
 		}
 	}
 
-/***************  MEDIA QUERY 500PX  ***************/
+	/***************  MEDIA QUERY 500PX  ***************/
 	@media (max-width: 500px) {
 		nav {
 			flex-direction: column;
@@ -176,9 +180,9 @@ nav > a:last-of-type {
 		}
 	}
 
-/* ********************************************************
-*                          BANNER                         *
-***********************************************************/
+/* **************************************************************
+*                          BANNER                               *
+****************************************************************/
 .banner-container {
 	display: flex;
 	align-items: center;
@@ -219,7 +223,7 @@ nav > a:last-of-type {
 	margin-left: 81px;
 }
 
-/***************  MEDIA QUERY 800PX  ***************/
+	/***************  MEDIA QUERY 800PX  ***************/
 	@media (max-width: 800px) {
 		.banner-container {
 			justify-content: center;
@@ -235,19 +239,19 @@ nav > a:last-of-type {
 			display: none;
 		}
 	}
-/***************  MEDIA QUERY 500PX  ***************/
-@media (max-width: 500px) {
-	.banner-container {
-		margin: 0 15px;
-		padding-top: 60px;
-		padding-bottom: 74px;
-		border-bottom: 2px solid black;
+	/***************  MEDIA QUERY 500PX  ***************/
+	@media (max-width: 500px) {
+		.banner-container {
+			margin: 0 15px;
+			padding-top: 60px;
+			padding-bottom: 74px;
+			border-bottom: 2px solid black;
+		}
 	}
-}
 
-/* ********************************************************
-*                   MAIN CONTENT                          *
-***********************************************************/
+/* **************************************************************
+*                   MAIN CONTENT                                *
+*****************************************************************/
 .content-container {
 	border-bottom: 2px solid black;
 }
@@ -283,7 +287,7 @@ nav > a:last-of-type {
 	width: 100%; 
 }
 
-/***************  MEDIA QUERY 800PX  ***************/
+	/***************  MEDIA QUERY 800PX  ***************/
 	@media (max-width: 800px) {
 
 		.content-row-1,
@@ -300,7 +304,7 @@ nav > a:last-of-type {
 		}
 	}
 
-/***************  MEDIA QUERY 500PX  ***************/
+	/***************  MEDIA QUERY 500PX  ***************/
 	@media (max-width: 500px) {
 
 		.content-container {
@@ -332,8 +336,8 @@ nav > a:last-of-type {
 	}
 
 /* ********************************************************
-*                      FOOTER                     *
-***************************************************/ 
+*                      FOOTER                             *
+***********************************************************/ 
 footer {
 	margin-top: 35px;
 }
@@ -348,19 +352,19 @@ footer a {
 	text-align: center;
 }
 
-/***************  MEDIA QUERY 800PX  ***************/
-@media (max-width: 800px) {
+	/***************  MEDIA QUERY 800PX  ***************/
+	@media (max-width: 800px) {
 
-	footer {
-		margin: 35px 10px 0px 10px;
+		footer {
+			margin: 35px 10px 0px 10px;
+		}
 	}
-}
 
-/***************  MEDIA QUERY 500PX  ***************/
-@media (max-width: 500px) {
+	/***************  MEDIA QUERY 500PX  ***************/
+	@media (max-width: 500px) {
 
-	footer {
-		margin: 35px 15px 0px 15px;
+		footer {
+			margin: 35px 15px 0px 15px;
+		}
 	}
-}
 
