@@ -66,17 +66,17 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-/* ************************************************
-*                    CONTAINER                     *
-***************************************************/ 
+/* ********************************************************
+*                        CONTAINER                        *
+***********************************************************/ 
 .container {
 	max-width: 880px;
 	margin: 0 auto;
 }
 
-/* ************************************************
-*                      HEADER                     *
-***************************************************/ 
+/* ********************************************************
+*                          HEADER                         *
+***********************************************************/
 header {
 	display: flex;
 }
@@ -85,19 +85,20 @@ header {
 	margin-top: 22px;
 }
 
-@media (max-width: 800px) {
-	header {
-		flex-direction: column-reverse;
+/***************  MEDIA QUERY 800PX  ***************/
+	@media (max-width: 800px) {
+		header {
+			flex-direction: column-reverse;
+		}
+
+		.logo-link {
+			align-self: center;
+		}
 	}
 
-	.logo-link {
-		align-self: center;
-	}
-}
-
-/* ************************************************
-*                       NAV                       *
-***************************************************/ 
+/* ********************************************************
+*                            NAV                          *
+***********************************************************/
 nav {
 	width: 100%;
 	display: flex;
@@ -126,9 +127,33 @@ nav > a:last-of-type {
 		}
 	}
 
-/* ************************************************
-*                     BANNER                      *
-***************************************************/ 
+/***************  MEDIA QUERY 500PX  ***************/
+	@media (max-width: 800px) {
+		nav {
+			flex-direction: column;
+		}
+
+		nav a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 100%;
+			height: 60px;
+			border-top: 1px solid #808080;
+			
+			font-size: 20px;
+			text-align: center;
+		}
+
+		nav a:last-of-type {
+			border-bottom: 1px solid #808080;
+		}
+	}
+
+/* ********************************************************
+*                          BANNER                         *
+***********************************************************/
 .banner-container {
 	display: flex;
 	align-items: center;
@@ -184,9 +209,9 @@ nav > a:last-of-type {
 		}
 	}
 
-/* ************************************************
-*                   MAIN CONTENT                  *
-***************************************************/ 
+/* ********************************************************
+*                   MAIN CONTENT                          *
+***********************************************************/
 .content-container {
 	border-bottom: 2px solid black;
 }
@@ -227,15 +252,29 @@ nav > a:last-of-type {
 }
 
 /***************  MEDIA QUERY 800PX  ***************/
-@media (max-width: 800px) {
+	@media (max-width: 800px) {
 
-	.content-row-1,
-	.content-row-2 {
-		padding: 0 2%;
+		.content-row-1,
+		.content-row-2 {
+			padding: 0 2%;
+		}
 	}
-}
 
-/* ************************************************
+/***************  MEDIA QUERY 500PX  ***************/
+	@media (max-width: 500px) {
+
+		.content-row-1,
+		.content-row-2 {
+			flex-direction: column;
+		}
+
+		.content-container section {
+			width: 100%;
+		}
+		
+	}
+
+/* ********************************************************
 *                      FOOTER                     *
 ***************************************************/ 
 footer {
